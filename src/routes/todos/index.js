@@ -1,7 +1,7 @@
 import { api } from './_api';
-import type { RequestHandler } from '@sveltejs/kit';
 
-export const get: RequestHandler = async ({ locals }) => {
+/** @type {import('./index').RequestHandler} */
+export const get = async ({ locals }) => {
 	// locals.userid comes from src/hooks.js
 	const response = await api('get', `todos/${locals.userid}`);
 
@@ -28,7 +28,8 @@ export const get: RequestHandler = async ({ locals }) => {
 	};
 };
 
-export const post: RequestHandler = async ({ request, locals }) => {
+/** @type {import('./index').RequestHandler} */
+export const post = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('post', `todos/${locals.userid}`, {
@@ -47,7 +48,8 @@ const redirect = {
 	}
 };
 
-export const patch: RequestHandler = async ({ request, locals }) => {
+/** @type {import('./index').RequestHandler} */
+export const patch = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('patch', `todos/${locals.userid}/${form.get('uid')}`, {
@@ -58,7 +60,8 @@ export const patch: RequestHandler = async ({ request, locals }) => {
 	return redirect;
 };
 
-export const del: RequestHandler = async ({ request, locals }) => {
+/** @type {import('./index').RequestHandler} */
+export const del = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('delete', `todos/${locals.userid}/${form.get('uid')}`);

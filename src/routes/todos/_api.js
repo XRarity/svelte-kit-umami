@@ -11,7 +11,12 @@
 
 const base = 'https://api.svelte.dev';
 
-export function api(method: string, resource: string, data?: Record<string, unknown>) {
+/**
+ * @param {string} method
+ * @param {string} resource
+ * @param {Record<string, unknown>} [data]
+ */
+export function api(method, resource, data) {
 	return fetch(`${base}/${resource}`, {
 		method,
 		headers: {

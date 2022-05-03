@@ -16,18 +16,17 @@
 
 <svelte:head>
 	<title>About</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="Features" />
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1>Features</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		Here are some features
 	</p>
 
-	<pre>npm init svelte</pre>
+	<!-- <pre>npm init svelte</pre>
 
 	<p>
 		The page you're looking at is purely static HTML, with no client-side interactivity needed.
@@ -38,7 +37,7 @@
 	<p>
 		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
 		it with JavaScript disabled!
-	</p>
+	</p> -->
 </div>
 
 <style>

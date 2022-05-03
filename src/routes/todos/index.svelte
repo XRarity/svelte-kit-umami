@@ -1,21 +1,25 @@
-<script lang="ts">
+<script>
 	import { enhance } from '$lib/form';
 	import { scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
 
-	type Todo = {
-		uid: string;
-		created_at: Date;
-		text: string;
-		done: boolean;
-		pending_delete: boolean;
-	};
+	/**
+	 * @typedef {{
+	 *   uid: string;
+	 *   created_at: Date;
+	 *   text: string;
+	 *   done: boolean;
+	 *   pending_delete: boolean;
+	 * }} Todo
+	 */
 
-	export let todos: Todo[];
+	/** @type {Todo[]} */
+	export let todos;
 </script>
 
 <svelte:head>
 	<title>Todos</title>
+	<meta name="description" content="A todo list app" />
 </svelte:head>
 
 <div class="todos">

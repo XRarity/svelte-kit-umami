@@ -1,32 +1,33 @@
-<script context="module" lang="ts">
+<script context="module">
 	export const prerender = true;
 </script>
 
-<script lang="ts">
+<script>
 	import Counter from '$lib/Counter.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Umami Public Analytics</title>
+	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
 <section>
 	<h1>
-		<div class="welcome">
+		<!-- <div class="welcome">
 			<picture>
 				<source srcset="svelte-welcome.webp" type="image/webp" />
 				<img src="svelte-welcome.png" alt="Welcome" />
 			</picture>
-		</div>
+		</div> -->
 
-		to your new<br />SvelteKit app
+		App with Umami Public Analytics
 	</h1>
 
-	<h2>
+	<!-- <h2>
 		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
+	</h2> -->
 
-	<Counter />
+	<!-- <Counter /> -->
 </section>
 
 <style>

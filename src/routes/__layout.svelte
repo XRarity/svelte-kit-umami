@@ -1,7 +1,12 @@
-<script lang="ts">
+<script>
 	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
+	import { browser } from '$app/env';
 </script>
+
+{#if browser}
+	<script async defer data-website-id="4f5c2742-a1dd-4695-95a7-8bde8b75f386" src="https://umami-production-ed79.up.railway.app/umami.js"></script>
+{/if}
 
 <Header />
 
@@ -9,9 +14,9 @@
 	<slot />
 </main>
 
-<footer>
+<!-- <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+</footer> -->
 
 <style>
 	main {

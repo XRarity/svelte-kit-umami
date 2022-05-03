@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { page } from '$app/stores';
 	import logo from './svelte-logo.svg';
 </script>
@@ -21,6 +21,15 @@
 			</li>
 			<li class:active={$page.url.pathname === '/todos'}>
 				<a sveltekit:prefetch href="/todos">Todos</a>
+			</li>
+			<li class:active={$page.url.pathname === '/team'}>
+				<a sveltekit:prefetch href="/team">Team</a>
+			</li>
+			<li class:active={$page.url.pathname === '/impressum'}>
+				<a sveltekit:prefetch href="/impressum">Impressum</a>
+			</li>
+			<li class:active={$page.url.pathname === '/features'}>
+				<a sveltekit:prefetch href="/features">Features</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
