@@ -162,6 +162,11 @@
     magic-string "^0.25.7"
     svelte-hmr "^0.14.9"
 
+"@sveltinio/services@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@sveltinio/services/-/services-0.3.0.tgz#ed31548482f0d85186558c991839b9a25c2c0d23"
+  integrity sha512-3f4QnxKI2uAz87r5CTrseOZcleHOhqrlEK5tBpliiMvlzj9daAdzl/42TolP55vNrmFLV9PQBYLJqgDPNaOsjA==
+
 "@types/cookie@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.4.1.tgz#bfd02c1f2224567676c1545199f87c3a861d878d"

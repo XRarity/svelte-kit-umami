@@ -4,12 +4,18 @@
 
 <script>
 	import Counter from '$lib/Counter.svelte';
+	import { UmamiAnalytics } from '@sveltinio/services';
 </script>
 
 <svelte:head>
 	<title>Umami Public Analytics</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
+
+<UmamiAnalytics
+ websiteID="4f5c2742-a1dd-4695-95a7-8bde8b75f386"
+ srcURL="https://umami-production-ed79.up.railway.app/umami.js"
+/>
 
 <section>
 	<h1>
